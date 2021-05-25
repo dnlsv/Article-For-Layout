@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 400;
+    color: #21243d;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box
+}
+
+a,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.wrapper {
+    width: 100%;
+}
+
+._container {
+    max-width: 1170px;
+    margin: 0 auto
+}
+
+.page {
+    margin: 70px auto;
+}
+
+.header__content {
+    padding: 15px 10px;
+}
+
+.brand {
+    height: 24px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__text {
+    width: 700px;
+}
+
+.title__screenshot {
+    width: 400px;
+}
+
+.title__description {
+    margin-top: 40px;
+}
+
+._section {
+    margin-top: 70px;
+}
+
+.corporate-search__main-header {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 100%;
+}
+
+._section-text {
+    margin: 40px 0 50px 0;
+}
+
+._screenshot {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+.line {
+    margin-top: 70px;
+    background: -o-linear-gradient(left, #ff6464, #b3454500);
+    background: linear-gradient(90deg, #ff6464, #b3454500);
+    width: 320px;
+    height: 2px;
+    margin-bottom: 20px!important
+}
+
+.footer {
+    padding: 30px 0;
+    background: -o-linear-gradient(#2e82ef, #361cc1);
+    background: linear-gradient(#2e82ef, #361cc1)
+}
+
+.contacts__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: start
+}
+
+.contacts__items {
+    display: flex;
+}
+
+.contacts__item {
+    color: #fff;
+    margin: 0 10px 0 0;
+    transition: color .3s ease 0s;
+    font-size: 14px;
+}
+
+.contacts__item:hover {
+    color: #ff6464
+}
