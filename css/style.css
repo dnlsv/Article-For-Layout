@@ -1,56 +1,125 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    line-height: 125%;
-    font-weight: 400;
-    color: #21243d;
+    border: 0;
 }
 
 *,
-*:after,
-*:before {
-    box-sizing: border-box
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
 }
 
 a,
 a:visited {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+/*------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.25em;
 }
 
 .wrapper {
     width: 100%;
 }
 
-._container {
-    max-width: 1170px;
-    margin: 0 auto
+.header {
+    padding: 20px 0;
 }
 
-.page {
-    margin: 70px auto;
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header__content {
-    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.brand {
-    height: 24px;
-}
-
-h1 {
-    font-size: 30px;
-    line-height: 30px;
+.page {
+    padding: 70px 0px;
 }
 
 .title {
@@ -59,50 +128,57 @@ h1 {
 }
 
 .title__text {
-    width: 700px;
+    padding: 0px 30px 0px 0px;
+}
+
+.title__title-one {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0px 0px 40px 0px;
 }
 
 .title__screenshot {
-    width: 400px;
+    max-width: 400px;
 }
 
-.title__description {
-    margin-top: 40px;
-}
-
-._section {
-    margin-top: 70px;
-}
-
-.corporate-search__main-header {
+.main-header {
+    padding: 70px 20px;
     text-align: center;
     font-size: 44px;
-    font-weight: 700;
-    line-height: 100%;
-}
-
-h3 {
-    font-size: 26px;
-    line-height: 100%;
-}
-
-._section-text {
-    margin: 40px 0 50px 0;
-}
-
-._screenshot {
-    width: 900px;
-    display: block;
-    margin: 0 auto;
+    font-weight: 600;
+    line-height: 1em;
 }
 
 .line {
-    margin-top: 70px;
     background: -o-linear-gradient(left, #ff6464, #b3454500);
     background: linear-gradient(90deg, #ff6464, #b3454500);
     width: 320px;
     height: 2px;
     margin-bottom: 20px!important
+}
+
+.third-title {
+    font-size: 26px;
+    line-height: 1em;
+    font-weight: 600;
+    margin: 0px 0px 40px 0px;
+}
+
+.text {
+    margin: 0px 0px 40px 0px;
+}
+
+.screenshot {
+    max-width: 100%;
+}
+
+.section {
+    padding: 0px 20px 70px 20px;
+}
+
+main section:last-child {
+    padding: 0px 20px;
 }
 
 .footer {
@@ -116,7 +192,6 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 10px 0;
-    text-align: start
 }
 
 .contacts__items {
@@ -132,4 +207,42 @@ h3 {
 
 .contacts__item:hover {
     color: #ff6464
+}
+
+@media (max-width: 1170px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .title {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .title__text {
+        padding: 0px;
+        text-align: center;
+    }
+    .title__screenshot {
+        padding: 0px 20px 40px 20px;
+    }
+    .main-header {
+        font-size: 38px;
+    }
+    .contacts__items {
+        flex-direction: column;
+    }
+    .footer__content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
 }
